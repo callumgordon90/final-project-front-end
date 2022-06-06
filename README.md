@@ -164,69 +164,69 @@ The **src** directory is where the entire application is stored. In this directo
 ***
 
 
-* **Actions**: En este directorio almacenamos toda la configuración redux de la aplicación.
-    * **post.actions.js**: This file contains the general state of the application.
-    * **user.actions.js**: This file contains the general state of the application.
-    * **users.actions.js**: This file contains the general state of the application.
+* **Actions**: In this directory we keep all of the configuration of the application.
+    * **post.actions.js**: All of the post actions are contained here
+    * **user.actions.js**: All of the single user actions are contained here
+    * **users.actions.js**: All of the multiple user actions are contained here
     
 
 ***
 
-* **Components**: En este directorio almacenamos toda la configuración redux de la aplicación.
-    * **AppContext.js**: This file contains the general state of the application.
-    * **LeftNav.js**: This file contains the general state of the application.
-    * **Navbar.js**: This file contains the general state of the application.
-    * **Thread.js**: This file contains the general state of the application.
-    * **tools.js**: This file contains the general state of the application.
-    * **Trends.js**: This file contains the general state of the application.
+* **Components**: In this directory we see all of the components that we use in all of the views:
+    * **AppContext.js**: The 'create context' function
+    * **LeftNav.js**: The navigator bar on the left hand side. Connects the home, trending and profile pages
+    * **Navbar.js**: The navbar at the top. Contains logo and logout function
+    * **Thread.js**: The wall of posts
+    * **tools.js**: Contains the date function
+    * **Trends.js**: The most trending posts rated in order of number of likes
   
 * **Components/Log**
-    * **index.js**: This file contains the general state of the application.
-    * **Logout.js**: This file contains the general state of the application.
-    * **SignInForm.js**: This file contains the general state of the application.
-    * **SignUpForm.js**: This file contains the general state of the application.
+    * **index.js**: Routes to the sign up and sign in features
+    * **Logout.js**: The logout component
+    * **SignInForm.js**: For a user to log in to an account
+    * **SignUpForm.js**: For a user to sign up and create an account
   
   **Components/Post**
-    * **Card.js**: This file contains the general state of the application.
-    * **CardComments.js**: This file contains the general state of the application.
-    * **DeleteCard.js**: This file contains the general state of the application.
-    * **EditDeleteComment.js**: This file contains the general state of the application.
-    * **LikeButton.js**: This file contains the general state of the application.
-    * **NewPostForm.js**: This file contains the general state of the application.
+    * **Card.js**: Card containing the various post features
+    * **CardComments.js**: Comments on a card
+    * **DeleteCard.js**: The component to delete a card (a post on the wall)
+    * **EditDeleteComment.js**: The ability to edit a comment
+    * **LikeButton.js**: The ability to like the posts of other users
+    * **NewPostForm.js**: The template in which a post is made
 
 
   **Components/Profile**
-    * **FollowHandler.js**: This file contains the general state of the application.
-    * **FriendsHint.js**: This file contains the general state of the application.
-    * **UpdateProfile.js**: This file contains the general state of the application.
-    * **UpdateImg.js**: This file contains the general state of the application.
+    * **FollowHandler.js**: The component to follow and unfollow other users
+    * **FriendsHint.js**: The component for other user suggestions
+    * **UpdateProfile.js**: The ability to edit and alter your bio or photo
+    * **UpdateImg.js**: The component to upload a profile picture
 
 
   **Components/Routes**
-    * **index.js**: This file contains the general state of the application.
+    * **index.js**: Routes all components
     
 ***
 
 
 
-* **Pages**: This directory is where the different views will be stored:
-    * **Home.js**: In this view the user can edit their profile.
-    * **Profile.js**: In this view the user can edit their profile.
-    * **Trending.js**: In this view the user can edit their profile.
+* **Pages**: This directory is where the different views  of a page will be stored:
+    * **Home.js**: This is the home page of the website
+    * **Profile.js**: This is the profile page of the website
+    * **Trending.js**: This is the trending page of the website
 
 ***
 
-* **Reducers**: This directory stores all components that will be used in all views:
-
-    * **allPost.reducer.js**: A border that appears at the top at all times.
-    * **error.reducer.js**: A section on the side that presents the different links to various pages.
-    * **index.js**: A section on the side that presents the different links to various pages.
-    * **post.reducer.js**: A section on the side that presents the different links to various pages.
-    * **trending.reducer.js**: A section on the side that presents the different links to various pages.
-    * **user.reducer.js**: A section on the side that presents the different links to various pages.
-    * **users.reducer.js**: A section on the side that presents the different links to various pages.
+* **Reducers**: Reducers modify the state 
+  
+    * **allPost.reducer.js**: Reducer for all of the posts on the wall
+    * **error.reducer.js**: The reducer for errors 
+    * **index.js**: Routes all of the other reducers
+    * **post.reducer.js**: Changes the state of posts
+    * **trending.reducer.js**: Alters the state of trending posts based on likes
+    * **user.reducer.js**: The reducer for a single user
+    * **users.reducer.js**: The reducer for all users
    
 
 -----------------------------------
 
-by Callum **Gordon**
+**by Callum Gordon**
